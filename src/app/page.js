@@ -105,10 +105,10 @@ export default function HomePage() {
           <p>
             <span className="font-semibold">Phone:</span>{' '}
             <a href="tel:1234567890" className="text-blue-600 hover:underline">
-              (123) 456-7890
+              (318) 789-5108
             </a>
           </p>
-          <p><span className="font-semibold">Instagram: </span>  <a className="text-blue-600" href="https://instagram.com/ethansinstagram" target="_blank">@ethansinstagram</a></p>
+          <p><span className="font-semibold">Instagram: </span>  <a className="text-blue-600" href="https://instagram.com/bankwest1_auto_detailing" target="_blank">@ethansinstagram</a></p>
         </div>
         <footer className="self-center sm:self-start sm:mt-0 mb-0 mt-2 ml-4">
           <p className="text-sm">
