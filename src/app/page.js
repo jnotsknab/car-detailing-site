@@ -74,8 +74,8 @@ export default function HomePage() {
       <section className="shadow-2xl flex-2 bg-sky-950 flex items-center justify-between px-2 py-4 text-left sm:px-10 sm:py-6">
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <div className="z-10 w-full sm:w-auto rounded transform transition-transform duration-300 hover:scale-105">
-            <h2 className=" text-center sm:text-left text-3xl sm:text-4xl px-8 py-3 font-semibold -mb-1 mt-2 sm:mb-2">Why Choose Us?</h2>
-            <p className="text-left sm:text-lg max-w-99/100 px-8 py-4 leading-loose">
+            <h2 className=" text-center text-white sm:text-left text-3xl sm:text-4xl px-8 py-3 font-semibold -mb-1 mt-2 sm:mb-2">Why Choose Us?</h2>
+            <p className="text-left text-white sm:text-lg max-w-99/100 px-8 py-4 leading-loose">
               At BankWest Auto Detailing, we’re not just another car detailing company—we are your car’s personal concierge. Here’s why our customers keep coming back and referring us to their friends:
               We come to you. Forget the hassle of waiting rooms or dropping off your vehicle. Our  mobile detailing team brings premium service right to you for a small surcharge of only ten dollars! At BankWest Auto Detailing our priority is providing you quality without compromising time or affordability.
               We pay attention to the details. Every vehicle we touch receives meticulous care, from deep interior cleans to mirror-finish exterior polishes. No speck of dirt goes unnoticed—we treat your car like it’s our own.
