@@ -1,103 +1,105 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import Link from "next/link"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="min-h-screen flex flex-col bg-gray-200">
+      {/* Row 1: Hero Section */}
+      <section className="sticky top-0 flex flex-col justify-center items-center bg-gray-900 text-white h-60 sm:h-90 overflow-hidden z-20">
+        <img 
+          src="/car.jpeg" 
+          alt="Detailed Car" 
+          className="absolute w-full h-full object-cover opacity-50 transform scale-100"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="z-10 text-center">
+          <img 
+            src="/bwLogo.png" 
+            alt="Detailed Car" 
+            className="absolute top-[-90px] left-1/2 transform -translate-x-1/2 scale-45 opacity-75 sm:top-[-60px] sm:scale-100"
+            style={{ maxWidth: '300px', maxHeight: '300px' }}
+          />
+          <h1 className="text-4xl font-bold mb-6">Bankwest Auto Detailing</h1>
+          <div className="space-x-6">
+            <Link 
+              href="/servicesoffered" 
+              className="bg-blue-600 hover:bg-blue-800 text-white px-6 py-2 rounded-lg transition-transform duration-200 hover:scale-120 inline-block"
+            >
+              Book Now
+            </Link>
+            <Link 
+              href="/portfolio" 
+              className="bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-300 transition-transform duration-200 hover:scale-120 inline-block"
+            >
+              View Portfolio
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Row 2: About Us */}
+
+      <div
+        className="fixed top-0 left-0 w-screen h-screen bg-cover bg-center opacity-5"
+        style={{ backgroundImage: "url(/portfolioImgs/port3.jpeg)" }}
+      ></div>
+
+      <section className="flex-1 bg-gray-300 text-black flex items-center justify-between px-2 py-4 text-left sm:px-10 sm:py-6">
+        <div className=" z-10 w-auto rounded transform transition-transform duration-300 hover:scale-105">
+          <h2 className="text-1xl sm:text-3xl px-8 py-4 font-semibold mb-0 sm:mb-2">About Us</h2>
+          <p className="text-left sm:text-base max-w-99/100 px-8 py-2">
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            
+            
+
+          </p>
+        </div>
+        <Link 
+              href="/about" 
+              className="bg-blue-600 z-10 text-white px-3 py-1 sm:px-12 sm:py-2 rounded-lg text-sm hover:bg-blue-800 
+              sm:text-base transition-transform duration-200 hover:scale-120 inline-block whitespace-nowrap mt-4 sm:mt-0"
+            >
+              Learn More
+        </Link>
+      </section>
+      
+
+      {/* Row 3: Why Choose Us */}
+      <section className="shadow-2xl flex-2 bg-sky-950 flex items-center justify-between px-2 py-4 text-left sm:px-10 sm:py-6">
+        <div className=" z-10 rounded transform transition-transform duration-300 hover:scale-105">
+          <h2 className="text-1xl sm:text-3xl px-8 py-3 font-semibold mb-0 sm:mb-2">Why Choose Us?</h2>
+          <p className="text-left sm:text-base max-w-99/100 px-8 py-4">
+            We use top-tier products, meticulous techniques, and offer flexible mobile services. Satisfaction is guaranteed — your car will shine like never before!
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            We’re passionate about making your vehicle look brand new. With years of experience, we provide the highest quality detailing services for all types of vehicles.
+            
+            
+          </p>
+        </div>
+        <Link 
+              href="/servicesoffered" 
+              className="bg-white z-10 text-black px-3 py-1 rounded-lg text-sm hover:bg-gray-300 self-center 
+              sm:px-15 sm:py-2 sm:rounded-lg sm:text-base transition-transform duration-200 hover:scale-120 inline-block"
+            >
+              Services
+        </Link>
+      </section>
+
+      {/* Row 4: Contact Info */}
+      <section className="flex-1 bg-gray-300 flex items-center justify-center px-8 text-center text-gray-800 py-6">
+        <div className="py-4 px-4 shadow-2xl z-10 rounded transform transition-transform duration-300 hover:scale-110">
+          <h2 className="text-2xl font-semibold mb-2 sm:text-3xl">Contact Us</h2>
+          <p>Email: ethansemail@gmail.com</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Instagram: <a className="text-blue-600" href="https://instagram.com/ethansinstagram" target="_blank">@ethansinstagram</a></p>
+        </div>
+      </section>
     </div>
   );
 }
