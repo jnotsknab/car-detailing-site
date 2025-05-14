@@ -20,7 +20,10 @@ export default function BookPage(){
             "/portfolioImgs/port8.jpeg",
             "/portfolioImgs/port9.jpeg",
             "/portfolioImgs/port10.jpeg",
-            "/portfolioImgs/port11.jpeg"
+            "/portfolioImgs/port11.jpeg",
+            "/portfolioImgs/port12.jpeg",
+            "/portfolioImgs/port13.jpeg",
+            "/portfolioImgs/port14.jpeg"
         ];
 
         setImageList(images);
@@ -42,7 +45,7 @@ export default function BookPage(){
             {/* Grid of scrolling images */}
 
             <div className="absolute w-full h-full animate-scroll bg-gray-950 flex flex-wrap z-10">
-                {[...imageList, ...imageList].map((src, index) => (
+                {[...imageList, ...imageList, ...imageList, ...imageList].map((src, index) => (
                     <div key={index} className="w-1/3 p-1 z-20">
                         <Image
                             src={src}
