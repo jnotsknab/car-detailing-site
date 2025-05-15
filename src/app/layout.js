@@ -1,5 +1,6 @@
 import { Titillium_Web } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 // Load the font and assign it to a CSS variable
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${titillium.variable} antialiased`}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
