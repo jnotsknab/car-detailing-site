@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${titillium.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
