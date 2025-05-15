@@ -105,7 +105,7 @@ export default function HomePage() {
           <p><span className="font-semibold">Email: </span> BankWestAutoDetailing@gmail.com</p>
           <p>
             <span className="font-semibold">Phone:</span>{' '}
-            <a href="tel:1234567890" className="text-blue-600 hover:underline">
+            <a href="tel:3187895108" className="text-blue-600 hover:underline">
               (318) 789-5108
             </a>
           </p>
