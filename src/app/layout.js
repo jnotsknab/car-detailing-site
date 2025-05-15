@@ -1,4 +1,5 @@
 import { Titillium_Web } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // Load the font and assign it to a CSS variable
