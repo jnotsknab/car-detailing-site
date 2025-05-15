@@ -24,6 +24,7 @@ export default function HomePage() {
             style={{ maxWidth: "300px", maxHeight: "300px" }}
           />
           <h1 className="text-3xl sm:text-6xl font-bold mb-6">BankWest Auto Detailing</h1>
+          <h2 className="text-1x1 sm:text-2xl -mt-4 mb-2 brightness-150">Now Serving Lake Jackson and Brazoria County</h2>
           <div className="space-x-6">
             <Link 
               href="/servicesoffered" 
