@@ -6,19 +6,30 @@ import { useState } from "react";
 export default function ServicesPage() {
     
     const [showModal, SetShowModal] = useState(false)
+    const [showTOSModal, SetShowTOSModal] = useState(false)
     const [selectedLink, setSelectedLink] = useState("")
 
     const handleImgClick = (link) => {
         setSelectedLink(link)
-        SetShowModal(true)
+        SetShowTOSModal(true)
     }
 
+    const handleTOSAccept = () => {
+        SetShowTOSModal(false)
+        SetShowModal(true)
+        
+    }
+    
+    const handleTOSDisagree = () => {
+        SetShowTOSModal(false)
+    }
     const handleClose = (link) => {
         SetShowModal(false)
         if (link) {
             window.open(link, "_blank")
         }
     }
+
     return (
         <div className="min-h-screen flex flex-col">
             <section className="flex flex-col md:flex-row items-center justify-center gap-4 p-4 bg-[url('/portfolioImgs/port5.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed min-h-screen">
@@ -60,6 +71,34 @@ export default function ServicesPage() {
                     </div>
                 </div>
                 )}
+            
+            {showTOSModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300 scale-85">
+                    <div className="bg-gray-300 rounded-lg shadow-xl p-6 max-w-md w-auto scale-75 sm:scale-100 md:scale-150 lg:scale-200  max-[375px]:scale-95 text-center animate-fadeIn">
+                        <h2 className="text-[0.875rem] font-semibold mb-4 text-gray-800">By clicking I Agree, you confirm that you have read and agree to our 
+                        Privacy Policy and Terms of Service.</h2>
+                        <div className="flex justify-center gap-4">
+                            <button
+                                onClick={() => {
+                                handleTOSAccept(selectedLink + "-clone");
+                                }}
+                                className="shadow-2xl bg-blue-600 z-10 text-white px-6 py-3 sm:px-12 sm:py-2 rounded-lg text-sm hover:bg-blue-800 transition-transform duration-200 hover:scale-110"
+                            >
+                            Agree
+                            </button>
+                            <button
+                                onClick={() => {
+                                handleTOSDisagree(selectedLink);
+                                }}
+                                className="shadow-2xl bg-white z-10 text-gray-800 px-6 py-3 sm:px-12 sm:py-2 rounded-lg text-sm hover:bg-gray-200 transition-transform duration-200 hover:scale-110"
+                            >
+                            Disagree
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                )}
+                
         </div>
     )
 }
