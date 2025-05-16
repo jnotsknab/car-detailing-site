@@ -38,7 +38,7 @@ export default function ServicesPage() {
             {showModal && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-[url('/portfolioImgs/port11.jpeg')] bg-cover bg-center transition-opacity duration-300">
                     <div className="bg-gray-300 rounded-lg shadow-xl p-6 max-w-md w-auto scale-75 sm:scale-100 md:scale-150 lg:scale-200  max-[375px]:scale-95 text-center animate-fadeIn">
-                        <h2 className="text-lg font-semibold mb-4 text-gray-800">We come to you for $10 extra</h2>
+                        <h2 className="text-lg font-semibold mb-4 text-gray-800">We come to you for only $10!</h2>
                         <div className="flex justify-center gap-4">
                             <button
                                 onClick={() => {

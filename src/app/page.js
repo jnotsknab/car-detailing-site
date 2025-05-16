@@ -3,13 +3,11 @@
 import Image from "next/image";
 import Link from "next/link"
 
-
 export default function HomePage() {
-  
   return (
     <div className="min-h-screen flex flex-col bg-gray-200">
       {/* Row 1: Hero Section */}
-      <section className="sticky top-0 flex flex-col justify-center items-center bg-gray-900 text-white h-60 sm:h-90 overflow-hidden z-20">
+      <section className="sticky top-0 flex flex-col justify-center items-center bg-gray-900 text-white h-60 sm:h-85 overflow-hidden z-20 shadow-2xl">
         
         <img 
           src="/car.jpeg" 
@@ -20,7 +18,7 @@ export default function HomePage() {
           <img 
             src="/bwLogo.png" 
             alt="Detailed Car" 
-            className="absolute top-[-90px] left-1/2 transform -translate-x-1/2 scale-45 opacity-75 sm:top-[-60px] sm:scale-100"
+            className="absolute top-[-90px] left-1/2 transform -translate-x-1/2 scale-45 opacity-75 sm:top-[-70px] sm:scale-100"
             style={{ maxWidth: "300px", maxHeight: "300px" }}
           />
           <h1 className="text-3xl sm:text-6xl font-bold mb-6">BankWest Auto Detailing</h1>
@@ -100,7 +98,7 @@ export default function HomePage() {
 
       {/* Row 4: Contact Info */}
       <section className="flex flex-col bg-gray-300 items-center justify-between px-8 text-center text-gray-800 py-6">
-        <div className="py-4 px-2 sm:px-20 sm:text-2xl shadow-2xl z-10 rounded transform transition-transform duration-300 hover:scale-110 flex-grow">
+        <div className="py-4 px-2 sm:px-20 sm:text-2xl shadow-2xl z-10 rounded transform transition-transform duration-300 hover:scale-110 flex-grow mt-4">
           <h2 className="text-2xl font-bold mb-2 sm:text-4xl">Contact Us</h2>
           <p><span className="font-semibold">Email: </span> BankWestAutoDetailing@gmail.com</p>
           <p>
@@ -109,11 +107,25 @@ export default function HomePage() {
               (318) 789-5108
             </a>
           </p>
-          <p><span className="font-semibold">Instagram: </span>  <a className="text-blue-600" href="https://instagram.com/bankwest1_auto_detailing" target="_blank">@ethansinstagram</a></p>
+          <p><span className="font-semibold">Instagram: </span>  <a className="text-blue-600" href="https://instagram.com/bankwest1_auto_detailing" target="_blank">@BankWestDetailing</a></p>
         </div>
-        <footer className="self-center sm:self-start sm:mt-0 mb-0 mt-2 ml-4">
-          <p className="text-sm">
+        <footer className="z-50 self-center sm:self-start sm:mt-0 mb-0 mt-2 ml-4">
+          <p className="text-[0.675rem]">
             Website Developed by Suspiria &trade;
+          </p>
+        </footer>
+        <footer className="z-50 self-center sm:self-start sm:mt-2 mb-0 mt-2 ml-4">
+          <p className="text-[0.675rem]">
+            <a href="/privacypolicy">
+              Privacy Policy
+            </a>
+          </p>
+        </footer>
+        <footer className="z-50 self-center sm:self-start sm:mt-2 -mb-2 mt-2 ml-4">
+          <p className="text-[0.675rem]">
+            <a href="/termsofservice">
+              Terms of Service
+            </a>
           </p>
         </footer>
       </section>
