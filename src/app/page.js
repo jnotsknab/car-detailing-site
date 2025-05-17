@@ -100,7 +100,7 @@ export default function HomePage() {
       <section className="flex flex-col bg-gray-300 items-center justify-between px-8 text-center text-gray-800 py-6">
         <div className="py-4 px-2 sm:px-20 sm:text-2xl shadow-2xl z-10 rounded transform transition-transform duration-300 hover:scale-110 flex-grow mt-4">
           <h2 className="text-2xl font-bold mb-2 sm:text-4xl">Contact Us</h2>
-          <p><span className="font-semibold">Email: </span> BankWestAutoDetailing@gmail.com</p>
+          <p><span className="font-semibold">Email: </span> <a href="/contactus">BankWestAutoDetailing@gmail.com</a></p>
           <p>
             <span className="font-semibold">Phone:</span>{' '}
             <a href="tel:3187895108" className="text-blue-600 hover:underline">
