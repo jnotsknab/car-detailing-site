@@ -52,7 +52,7 @@ export default function ContactUsPage() {
         {/* Row 1: Hero Section */}
             <section className="sticky top-0 flex flex-col justify-center items-center bg-gray-900 text-white h-30 sm:h-50 overflow-hidden z-20 shadow-2xl">
                 <img 
-                src="/policyImgs/tosbanner.jpg" 
+                src="/policyImgs/contactbanner.jpg" 
                 alt="Detailed Car" 
                 className="absolute w-auto h-auto object-cover opacity-75 transform scale-100"
                 />
@@ -65,7 +65,7 @@ export default function ContactUsPage() {
             {/* BackGround Image Dont Touch */}
             <div
                 className="fixed top-0 left-0 w-screen h-screen bg-cover bg-center opacity-10"
-                style={{ backgroundImage: "url(/policyImgs/tosbg.jpg)" }}
+                style={{ backgroundImage: "url(/person2.jpeg)" }}
             ></div>
 
             {/* Contact Us Form*/}
