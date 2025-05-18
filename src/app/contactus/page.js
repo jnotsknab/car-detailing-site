@@ -35,7 +35,7 @@ export default function ContactUsPage() {
 
             const result = await response.json();
             if (response.ok) {
-                setStatus("Message sent successfully! We will get back to you as soon as possible. Thank you for your patience!");
+                setStatus("Email sent successfully! We will get back to you as soon as possible. Thank you for your patience!");
                 setFormData({name: "", email: "", subject: "", message: ""});
 
             } else{
