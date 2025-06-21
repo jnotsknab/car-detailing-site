@@ -18,16 +18,6 @@ This is a professional, responsive website built for a local car detailing busin
 - SEO and accessibility-friendly setup
 - Integrated with a custom domain via Vercel
 
----
-
-## 🧱 Tech Stack
-
-- **Frontend**: [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com)
-- **Backend**: [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
-- **Email Service**: [Resend](https://resend.com)
-
----
-
 ## 📬 Contact Form Setup
 
 The contact form uses a single API route:
